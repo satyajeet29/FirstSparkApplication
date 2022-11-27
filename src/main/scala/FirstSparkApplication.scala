@@ -2,7 +2,6 @@ package org.spark.practice
 import org.apache.spark.{SparkConf,SparkContext}
 
 object FirstSparkApplication {
-
   def main(args: Array[String]): Unit = {
     val conf = new SparkConf()
     conf.setMaster("local")
@@ -13,6 +12,4 @@ object FirstSparkApplication {
     rdd1.collect().foreach(println)
 
   }
-
-
 }
