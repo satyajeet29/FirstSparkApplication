@@ -1,7 +1,8 @@
 package org.spark.practice
-import org.apache.spark.{SparkConf,SparkContext}
+
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions._
+import org.apache.spark.sql.functions.{col, count, desc}
+
 object MnMcount {
   def main(args: Array[String]) {
     val spark = SparkSession
